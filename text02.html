@@ -1,0 +1,35 @@
+<!--
+	javascript的脚本块在一个页面当中可以出现多次。没有要求。
+	javascript的脚本块出现位置也没有要求，随意。
+-->
+<script type="text/javascript">
+    // alert有阻塞当前页面加载的作用。（阻挡，直到用户点击确定按钮。）
+    window.alert("梁Σ宽");
+</script>
+    <html>
+        <head>
+            <title>HTML中嵌入JS代码的第二种方式</title>
+            <!--样式块-->
+            <style type="text/css">/*css代码*/</style>
+            <script type="text/javascript">
+                window.alert("梁和宽111");
+            </script>
+        </head>
+        <body>
+        <input type="button" value="梁河宽1" />
+            <!--第二种方式：脚本块的方式-->
+            <script type="text/javascript">
+                /*
+                    暴露在脚本块当中的程序，在页面打开的时候执行，
+                    并且遵守自上而下的顺序依次逐行执行。（这个代
+                    码的执行不需要事件）
+                */
+                window.alert("梁河宽"); // alert函数会阻塞整个HTML页面的加载。
+                window.alert("梁荷宽");
+            </script>
+        <input type="button" value="梁喝宽" />
+        </body>
+    </html>
+    <script type="text/javascript">
+    window.alert("梁＆宽");
+    </script>
